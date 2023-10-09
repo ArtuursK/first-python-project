@@ -32,10 +32,10 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
         self.canvas = MplCanvas(self, width=50, height=40, dpi=100)
-        self.setCentralWidget(self.canvas)
-        #self.set
+        main_widget = QtWidgets.QWidget(self)
+        self.setCentralWidget(main_widget)
 
-        layout = QVBoxLayout()
+        layout = QVBoxLayout(main_widget)
         temp_button = QPushButton('temp', self)
         temp_button.clicked.connect(lambda: self.update_plot("temp"))
         layout.addWidget(temp_button)
@@ -45,18 +45,11 @@ class MainWindow(QtWidgets.QMainWindow):
         light_button.clicked.connect(lambda: self.update_plot("light"))
         layout.addWidget(light_button)
 
-        #layout.addWidget(self.canvas)
+        layout.addWidget(self.canvas)
 
-        #layout.addWidget(self.canvas)
         self.setLayout(layout)
         self.setWindowTitle('Sensoru dati')
         self.show()
-
-        # Setup a timer to trigger the redraw by calling update_plot.
-        # self.timer = QtCore.QTimer()
-        # self.timer.setInterval(100)
-        # self.timer.timeout.connect(self.update_plot, 'temp')
-        # self.timer.start()
 
 
 
