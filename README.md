@@ -1,9 +1,9 @@
 
 
 
-| Name | Description |
-|------|-------------|
-| Oskars| Implemented a button for saving user data|
+| Name | Description | Date |
+|------|-------------|------|
+| Oskars| Implemented a button for saving user data| 18.03 |
 
 
 
