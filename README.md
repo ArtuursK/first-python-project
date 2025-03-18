@@ -3,7 +3,8 @@
 
 | Name | Description | Date |
 |------|-------------|------|
-| Oskars| Implemented a button for saving user data| 18.03 |
+| Oskars | Implemented a button for saving user data| 18.03 |
+| Jake | Added tests for saving user data process | 18.03 |
 
 
 
